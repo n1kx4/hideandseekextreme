@@ -1,0 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("hide and seek extreme", "DarkTheme")
+setclipboard("discord.gg/xscript")
+
+-- MAIN
+local Main = Window:NewTab("Script")
+local MainSection = Main:NewSection("Script")
+
+MainSection:NewButton("Main Script", "Executes the script.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sf3WXZTb"))()
+end)
+
+MainSection:NewButton("Infinite Yield", "Executes Infinite Yield.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hRxB9mTx"))()
+end)
+
+MainSection:NewButton("Normal WalkSpeed (use after Main Script)", "Changes your WalkSpeed to 16 (normal walkspeed).", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
